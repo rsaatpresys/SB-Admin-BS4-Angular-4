@@ -1,1 +1,77 @@
-<h1>Wifi Page</h1>
+    <div class="row">
+        <div class="col">
+
+            <h4>Wifi Configuration</h4>
+
+            <h5 class="mt-3">Available Networks</h5>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Ssid</th>
+                        <th>Bssid</th>
+                        <th>Frequency</th>
+                        <th>SignalLevel</th>
+                        <th>Flags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">presys</th>
+                        <td>12:fd:aa:bb:cc</td>
+                        <td>2426</td>
+                        <td>80</td>
+                        <td>WPA-PSK</td>
+                    </tr>
+
+                    <tr>
+                            <th scope="row">presys-2</th>
+                            <td>12:fd:aa:bb:cc</td>
+                            <td>2426</td>
+                            <td>80</td>
+                            <td>WPA-PSK</td>
+                        </tr>
+                   
+                </tbody>
+            </table>
+
+            <form role="form">
+                <fieldset class="form-group">
+                    <button type="button" class="btn btn-secondary">Scan</button>
+                </fieldset>
+            </form>
+        
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-3">
+
+            <h5>Connect to Wifi</h5>
+
+            <form role="form">
+
+                <fieldset class="form-group">
+                    <label for="ssid">Ssid</label>
+                    <input type="text" class="form-control" id="ssid" value="presys">
+                </fieldset>
+
+                <fieldset class="form-group">
+                        <label for="passwordwifi">Password</label>
+                        <input type="password" class="form-control" id="passwordwifi" value="12345679">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <button type="button" class="btn btn-secondary">Connect</button>
+                    <button type="button" class="btn btn-secondary">Update Status</button>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <h5>Connect OK</h5>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>

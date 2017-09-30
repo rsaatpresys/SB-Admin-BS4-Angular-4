@@ -1,1 +1,55 @@
-<h1>Modbus Page</h1>
+    <div class="row">
+        <div class="col-lg-3">
+
+            <h4>Modbus Configuration</h4>
+
+            <form role="form">
+                <fieldset class="form-group">
+                    <label for="comPort">COM Port</label>
+                    <input type="text" class="form-control" id="comPort" value="/dev/ttyUSB0">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="comPortTimeOut">COM Port Timeout (ms)</label>
+                    <input type="text" class="form-control" id="comPortTimeOut" value="1000">
+                </fieldset>
+
+
+                <fieldset class="form-group">
+                    <label for="modbusTcpPort">Modbus/TCP Port</label>
+                    <input type="text" class="form-control" id="modbusTcpPort" value="502">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <button type="button" class="btn btn-secondary">Save</button>
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="row mt-4">
+        <div class="col-lg-3">
+
+            <h4>Test Connection</h4>
+
+            <form role="form">
+
+                <fieldset class="form-group">
+                    <label for="modbusSlave">Modbus Slave</label>
+                    <input type="text" class="form-control" id="modbusSlave" value="1">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <button type="button" class="btn btn-secondary">Test</button>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <h5>Test OK</h5>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>

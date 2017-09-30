@@ -1,1 +1,84 @@
-<h1>Interfaces Page</h1>
+    <h4>Interfaces Configuration</h4>
+
+    <div class="row">
+        <div class="col-lg-3">
+
+            <form role="form">
+
+                <h5>eth0</h5>
+
+                <fieldset class="form-group">
+                    <label class="radio-inline">
+                            <input type="radio" name="optioneth" id="optionethAutoIP" value="autoip" checked="">Automatic IP
+                        </label>
+                    <label class="radio-inline">
+                            <input type="radio" name="optioneth" id="optionethManIP" value="manip">Manual IP
+                        </label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="ethipaddress">Ip Address</label>
+                    <input type="text" class="form-control" id="ethipaddress" value="192.168.1.52">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="ethsubnetmask">Subnet Mask</label>
+                    <input type="text" class="form-control" id="ethsubnetmask" value="255.255.255.0">
+                </fieldset>
+
+
+                <fieldset class="form-group">
+                    <label for="ethgateway">Gateway</label>
+                    <input type="text" class="form-control" id="ethgateway" value="192.168.1.1">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <button type="button" class="btn btn-secondary">Save</button>
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-3">
+
+            <form role="form">
+
+                <h5>wlan0</h5>
+
+                <fieldset class="form-group">
+                    <label class="radio-inline">
+                                <input type="radio" name="optionwlan" id="optionwlanAutoIP" value="autoip" checked="">Automatic IP
+                            </label>
+                    <label class="radio-inline">
+                                <input type="radio" name="optionwlan" id="optionwlanManIP" value="manip">Manual IP
+                            </label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="wlanipaddress">Ip Address</label>
+                    <input type="text" class="form-control" id="wlanipaddress" value="192.168.1.52">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="wlansubnetmask">Subnet Mask</label>
+                    <input type="text" class="form-control" id="wlansubnetmask" value="255.255.255.0">
+                </fieldset>
+
+
+                <fieldset class="form-group">
+                    <label for="wlangateway">Gateway</label>
+                    <input type="text" class="form-control" id="wlangateway" value="192.168.1.1">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <button type="button" class="btn btn-secondary">Save</button>
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>

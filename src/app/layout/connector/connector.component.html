@@ -1,1 +1,61 @@
-<h1>Connector Page</h1>
+<div class="row">
+    <div class="col-lg-3">
+
+        <h4>Connector Configuration</h4>
+
+        <form role="form" class="mt-4">
+
+            <fieldset class="form-group">
+                <label>
+                        <input type="checkbox" name="enableConnector" value="1" checked >Enable Connector
+                    </label>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="brokerAddress">Broker Address</label>
+                <input type="text" class="form-control" id="brokerAddress" value="test.mosquitto.org">
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="brokerPort">Broker Port</label>
+                <input type="text" class="form-control" id="brokerPort" value="1883">
+            </fieldset>
+
+            <fieldset class="form-group">
+                    <label for="calibratorForced">Define Calibrator</label>
+                    <input type="text" class="form-control" id="calibratorForced" value="1:0010313">
+            </fieldset>
+
+            <fieldset class="form-group">
+                <button type="button" class="btn btn-secondary">Save</button>
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </fieldset>
+
+        </form>
+    </div>
+</div>
+
+
+<div class="row mt-4">
+    <div class="col-lg-3">
+
+        <h4>Test Connection</h4>
+
+        <form role="form">
+
+            <fieldset class="form-group">
+                <label for="calibratorSerial">Calibrator Serial Number</label>
+                <input type="text" class="form-control" id="calibratorSerial" value="01.01.17">
+            </fieldset>
+
+            <fieldset class="form-group">
+                <button type="button" class="btn btn-secondary">Test</button>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <h5>Test OK</h5>
+            </fieldset>
+
+        </form>
+    </div>
+</div>
