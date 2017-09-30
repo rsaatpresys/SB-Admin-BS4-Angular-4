@@ -8,6 +8,8 @@ const routes: Routes = [
         children: [
             { path: 'modbus', loadChildren: './modbus/modbus.module#ModbusModule' },
             { path: 'wifi', loadChildren: './wifi/wifi.module#WifiModule' },
+            { path: 'connector', loadChildren: './connector/connector.module#ConnectorModule' },
+            { path: 'interfaces', loadChildren: './interfaces/interfaces.module#InterfacesModule' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
